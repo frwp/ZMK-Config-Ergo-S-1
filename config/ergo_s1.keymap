@@ -84,6 +84,6 @@
             &kp C_PP    &kp C_STOP      &kp C_PREV      &kp C_NEXT                      &trans  &trans  &trans    &trans  &trans  &trans                  &msc SCRL_LEFT    &mkp MB3        &msc SCRL_RIGHT     &none
                                                                                                         &trans    &trans
             >;
-        }
+        };
     };
 };
