@@ -31,19 +31,19 @@
 
         default_layer {
             // ---------------------------------------------------------------------------------------------------------------------------------
-            // | EQLS  |  1   |  2   |  3   |  4   |  5   |                                                   |  6   |  7   |  8   |  9   |  0   | MINS |
+            // | EQLS  |  1   |  2   |  3   |  4   |  5   |                                                   |  6   |  7   |  8   |  9   |  0   | \    |
             // | TAB   |  "   |  <   |  >   |  P   |  Y   |                                                   |  F   |  G   |  C   |  R   |  L   | SLSH |
-            // | ESC   |  A   |  O   |  E   |  U   |  I   |                                                   |  D   |  H   |  T   |  N   |  S   | \    |
+            // | LCTRL |  A   |  O   |  E   |  U   |  I   |                                                   |  D   |  H   |  T   |  N   |  S   | MINS |
             // | LSHFT |  ;   |  Q   |  J   |  K   |  X   |      | ALT  | CTRL |         | WIN  | CTL  |      |  B   |  M   |  W   |  V   |  Z   | SHFT |
-            //         | GRV  | BSLS | LEFT | RGHT |      | BSPC |  FN  | HOME |         | PGUP | ENT  | BSPC |      |  UP  |  DN  |  [   |  ]   |
+            //         | GRV  |  #/~ |  [   |  ]   |      | BSPC |  FN  | HOME |         | PGUP | ENT  | SPC  |      | LEFT |  UP  |  DN  | RIGH |
             //                                                          | END  |         | PGDN |
 
             bindings = <
-&kp EQUAL   &kp N1     &kp N2      &kp N3    &kp N4     &kp N5                                                                             &kp N6  &kp N7  &kp N8     &kp N9      &kp N0     &kp MINUS
-&kp TAB     &kp SQT    &kp COMMA   &kp DOT   &kp P      &kp Y                                                                              &kp F   &kp G   &kp C      &kp R       &kp L      &kp SLASH
-&kp ESC     &kp A      &kp O       &kp E     &kp U      &kp I                                                                              &kp D   &kp H   &kp T      &kp N       &kp S      &kp BSLH
-&kp LSHIFT  &kp SEMI   &kp Q       &kp J     &kp K      &kp X             &kp LALT   &kp LCTRL       &kp LGUI       &kp RCTRL              &kp B   &kp M   &kp W      &kp V       &kp Z      &kp RSHIFT
-            &kp GRAVE  &kp BSLH    &kp LEFT  &kp RIGHT          &kp SPACE  &mo 1     &kp HOME        &kp PG_UP      &kp ENTER  &kp BSPC            &kp UP  &kp DOWN   &kp LBKT    &kp RBKT
+&kp EQUAL   &kp N1     &kp N2      &kp N3    &kp N4     &kp N5                                                                             &kp N6  &kp N7   &kp N8     &kp N9      &kp N0     &kp BSLH
+&kp TAB     &kp SQT    &kp COMMA   &kp DOT   &kp P      &kp Y                                                                              &kp F   &kp G    &kp C      &kp R       &kp L      &kp SLASH
+&kp LCTRL   &kp A      &kp O       &kp E     &kp U      &kp I                                                                              &kp D   &kp H    &kp T      &kp N       &kp S      &kp MINUS
+&kp LSHIFT  &kp SEMI   &kp Q       &kp J     &kp K      &kp X             &kp LALT   &kp LCTRL       &kp LGUI       &kp RCTRL              &kp B   &kp M    &kp W      &kp V       &kp Z      &kp RSHIFT
+            &kp GRAVE  &kp NUHS    &kp LBKT  &kp RBKT           &kp BSPC  &mo 1      &kp HOME        &kp PG_UP      &kp ENTER  &kp SPACE           &kp LEFT &kp UP     &kp DOWN    &kp RIGHT
                                                                                      &kp END         &kp PG_DN
             >;
         };
@@ -51,17 +51,17 @@
         fn_layer {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // | ESC  |  F1  |  F2  |  F3  |  F4   |  F5  |                                                   |      | NLCK |  =   |  /   |  *   | F11  |
-            // |      |  F6  |  F7  |  F8  |  F9   |  F10 |                                                   |  (   |  7   |  8   |  9   |  -   | F12  |
+            // | A-Tab|  F6  |  F7  |  F8  |  F9   |  F10 |                                                   |  (   |  7   |  8   |  9   |  -   | F12  |
             // | SHIFT| C-a  | C-s  | INS  | PRTSC |      |                                                   |  )   |  4   |  5   |  6   |  +   |      |
-            // | C-z  | C-x  | C-c  | C-v  |       |      |      |      |      |         |      |C_MENU|      |      |  1   |  2   |  3   | ENT  |      |
+            // |      | C-z  | C-x  | C-c  | C-v   |      |      |      |      |         |      |C_MENU|      |      |  1   |  2   |  3   | ENT  |      |
             //        |      | INS  |      |       |      |      |  FN  |      |         |      |ADJUST|  DEL |      |  0   |  .   |  ,   | ENT  |
             //                                                          |      |         |      |
 
             bindings = <
 &kp ESC       &kp F1     &kp F2    &kp F3     &kp F4      &kp F5                                                          &trans       &kp KP_NUM   &kp EQUAL  &kp SLASH      &kp STAR          &kp F11
-&trans        &kp F6     &kp F7    &kp F8     &kp F9      &kp F10                                                         &kp LPAR     &kp N7       &kp N8     &kp N9         &kp KP_MINUS      &kp F12
-&kp CAPSLOCK  &kp LC(A)  &kp LC(S) &kp INS    &kp PSCRN   &trans                                                          &kp RPAR     &kp N4       &kp N5     &kp N6         &kp KP_PLUS       &trans
-&trans        &kp LC(Z)  &kp LC(X) &kp LC(C)  &kp LC(V)   &trans            &trans &trans    &trans  &kp K_APP            &trans       &kp N1       &kp N2     &kp N3         &kp ENTER         &trans
+&kp LA(TAB)   &kp F6     &kp F7    &kp F8     &kp F9      &kp F10                                                         &kp LPAR     &kp KP_N7    &kp KP_N8  &kp KP_N9      &kp KP_MINUS      &kp F12
+&kp CAPSLOCK  &kp LC(A)  &kp LC(S) &kp INS    &kp PSCRN   &trans                                                          &kp RPAR     &kp KP_N4    &kp KP_N5  &kp KP_N6      &kp KP_PLUS       &trans
+&trans        &kp LC(Z)  &kp LC(X) &kp LC(C)  &kp LC(V)   &trans            &trans &trans    &trans  &kp K_APP            &trans       &kp KP_N1    &kp KP_N2  &kp KP_N3      &kp ENTER         &trans
               &trans     &trans    &trans     &trans                &trans  &trans &trans    &trans  &mo 2    &kp DEL                  &kp N0       &kp DOT    &kp COMMA      &kp ENTER
                                                                                    &trans    &trans
             >;
