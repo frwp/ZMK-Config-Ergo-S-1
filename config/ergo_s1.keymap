@@ -99,7 +99,7 @@
             //                                                                      |      |         |      |
 
             bindings = <
-&tog DEFAULT      &kp C_MUTE  &kp C_VOL_DN    &kp C_VOL_UP    &kp C_BRI_DN    &kp C_BRI_UP                                                        &kp F7        &kp F8            &kp F9          &kp F10             &kp F11         &kp F12
+&tog 0            &kp C_MUTE  &kp C_VOL_DN    &kp C_VOL_UP    &kp C_BRI_DN    &kp C_BRI_UP                                                        &kp F7        &kp F8            &kp F9          &kp F10             &kp F11         &kp F12
 &none             &none       &none           &none           &none           &none                                                               &bt BT_CLR    &bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2        &bt BT_SEL 3    &bt BT_SEL 4
 &none             &none       &none           &none           &msc SCRL_UP    &none                                                               &out OUT_TOG  &mkp MB1          &mmv MOVE_UP    &mkp MB2            &none           &none
 &trans            &none       &none           &none           &msc SCRL_DOWN  &none                   &trans  &trans    &trans  &trans            &trans        &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &none           &none
