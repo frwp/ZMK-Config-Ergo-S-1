@@ -4,16 +4,17 @@
  * SPDX-License-Identifier: MIT
  */
 
+#define DVORAK 0
+#define QWERTY 1
+#define FN 2
+#define ADJUST 3
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#define DEFAULT 0
-#define QWERTY 1
-#define FN 2
-#define ADJUST 3
 
 // |------|------|------|------|------|------|                                                |------|------|------|------|------|------|
 // | SW1  | SW2  | SW3  | SW4  | SW5  | SW6  |                                                | SW6  | SW5  | SW4  | SW3  | SW2  | SW1  |
@@ -99,12 +100,12 @@
             //                                                                      |      |         |      |
 
             bindings = <
-&tog 0            &kp C_MUTE  &kp C_VOL_DN    &kp C_VOL_UP    &kp C_BRI_DN    &kp C_BRI_UP                                                        &kp F7        &kp F8            &kp F9          &kp F10             &kp F11         &kp F12
-&none             &none       &none           &none           &none           &none                                                               &bt BT_CLR    &bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2        &bt BT_SEL 3    &bt BT_SEL 4
-&none             &none       &none           &none           &msc SCRL_UP    &none                                                               &out OUT_TOG  &mkp MB1          &mmv MOVE_UP    &mkp MB2            &none           &none
-&trans            &none       &none           &none           &msc SCRL_DOWN  &none                   &trans  &trans    &trans  &trans            &trans        &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &none           &none
-                  &kp C_PP    &kp C_STOP      &kp C_PREV      &kp C_NEXT                      &trans  &trans  &trans    &trans  &trans  &trans                  &msc SCRL_LEFT    &mkp MB3        &msc SCRL_RIGHT     &none
-                                                                                                              &trans    &trans
+&to DVORAK     &kp C_MUTE  &kp C_VOL_DN    &kp C_VOL_UP    &kp C_BRI_DN    &kp C_BRI_UP                                                        &kp F7        &kp F8            &kp F9          &kp F10             &kp F11         &kp F12
+&to QWERTY     &none       &none           &none           &none           &none                                                               &bt BT_CLR    &bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2        &bt BT_SEL 3    &bt BT_SEL 4
+&none          &none       &none           &none           &msc SCRL_UP    &none                                                               &out OUT_TOG  &mkp MB1          &mmv MOVE_UP    &mkp MB2            &none           &none
+&trans         &none       &none           &none           &msc SCRL_DOWN  &none                   &trans  &trans    &trans  &trans            &trans        &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &none           &none
+               &kp C_PP    &kp C_STOP      &kp C_PREV      &kp C_NEXT                      &trans  &trans  &trans    &trans  &trans  &trans                  &msc SCRL_LEFT    &mkp MB3        &msc SCRL_RIGHT     &none
+                                                                                                           &trans    &trans
             >;
         };
     };
