@@ -2,23 +2,25 @@
 
 > This is my keymap for reference
 
-### default_layer 
-// ---------------------------------------------------------------------------------------------------------------------------------
-// | EQLS  |  1   |  2   |  3   |  4   |  5   |                                                   |  6   |  7   |  8   |  9   |  0   | \    |
-// | TAB   |  "   |  <   |  >   |  P   |  Y   |                                                   |  F   |  G   |  C   |  R   |  L   | SLSH |
-// | LCTRL |  A   |  O   |  E   |  U   |  I   |                                                   |  D   |  H   |  T   |  N   |  S   | MINS |
-// | LSHFT |  ;   |  Q   |  J   |  K   |  X   |      | ALT  | WIN  |         | WIN  | CTL  |      |  B   |  M   |  W   |  V   |  Z   | SHFT |
-//         | GRV  |  #/~ |  [   |  ]   |      | BSPC |  FN  | HOME |         | PGUP | ENT  | SPC  |      | LEFT |  UP  |  DN  | RIGH |
-//                                                          | END  |         | PGDN |
+### default_layer
+```
+---------------------------------------------------------------------------------------------------------------------------------
+| EQLS  |  1   |  2   |  3   |  4   |  5   |                                                   |  6   |  7   |  8   |  9   |  0   | \    |
+| TAB   |  "   |  <   |  >   |  P   |  Y   |                                                   |  F   |  G   |  C   |  R   |  L   | SLSH |
+| LCTRL |  A   |  O   |  E   |  U   |  I   |                                                   |  D   |  H   |  T   |  N   |  S   | MINS |
+| LSHFT |  ;   |  Q   |  J   |  K   |  X   |      | ALT  | WIN  |         | WIN  | CTL  |      |  B   |  M   |  W   |  V   |  Z   | SHFT |
+        | GRV  |  #/~ |  [   |  ]   |      | BSPC |  FN  | HOME |         | PGUP | ENT  | SPC  |      | LEFT |  UP  |  DN  | RIGH |
+                                                         | END  |         | PGDN |
+```
 
 ### qwerty_layer
-// ---------------------------------------------------------------------------------------------------------------------------------
-// | EQLS  |  1   |  2   |  3   |  4   |  5   |                                                   |  6   |  7   |  8   |  9   |  0   | MINS |
-// | TAB   |  Q   |  W   |  E   |  R   |  T   |                                                   |  Y   |  U   |  I   |  O   |  P   | \    |
-// | LCTRL |  A   |  S   |  D   |  F   |  G   |                                                   |  D   |  J   |  K   |  L   |  ;   | "    |
-// | LSHFT |  Z   |  X   |  C   |  V   |  B   |      | ALT  | WIN  |         | WIN  | CTL  |      |  B   |  M   |  ,   |  .   |  /   | SHFT |
-//         | GRV  |  #/~ |  [   |  ]   |      | BSPC |  FN  | HOME |         | PGUP | ENT  | SPC  |      | LEFT |  UP  |  DN  | RIGH |
-//                                                          | END  |         | PGDN |
+---------------------------------------------------------------------------------------------------------------------------------
+| EQLS  |  1   |  2   |  3   |  4   |  5   |                                                   |  6   |  7   |  8   |  9   |  0   | MINS |
+| TAB   |  Q   |  W   |  E   |  R   |  T   |                                                   |  Y   |  U   |  I   |  O   |  P   | \    |
+| LCTRL |  A   |  S   |  D   |  F   |  G   |                                                   |  D   |  J   |  K   |  L   |  ;   | "    |
+| LSHFT |  Z   |  X   |  C   |  V   |  B   |      | ALT  | WIN  |         | WIN  | CTL  |      |  B   |  M   |  ,   |  .   |  /   | SHFT |
+        | GRV  |  #/~ |  [   |  ]   |      | BSPC |  FN  | HOME |         | PGUP | ENT  | SPC  |      | LEFT |  UP  |  DN  | RIGH |
+                                                         | END  |         | PGDN |
 
 
 ### fn_layer
